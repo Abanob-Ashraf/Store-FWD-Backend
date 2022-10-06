@@ -33,8 +33,15 @@ CREATE DATABASE storefrontbackend_test;
 #### Database Migrations
 
 ```sh
-# Migrations used in this project
+
+# Migrations used to Create a Tables in Database
 db-migrate up
+
+# Migrations used to make Drop a Tables in Database
+db-migrate down
+
+# Migrations used in this project
+
 db-migrate create add-users-table --sql-file
 db-migrate create add-products-table --sql-file
 db-migrate create add-orders-table --sql-file
