@@ -43,8 +43,6 @@ For example: `http://localhost:prot:3000`
 
 #### Orders
 
-```sh
-|:--------------------------:|:--------:|------------------|------------------------------------------|:--------------:|
 |         - FUNCTIONS        | - Methos |    - Routes      |            - Description                 | Token Required |
 |:--------------------------:|:--------:|------------------|------------------------------------------|:--------------:|
 |             Index          |    GET   | /orders          | Show all orders                          |      TRUE      |
@@ -55,13 +53,10 @@ For example: `http://localhost:prot:3000`
 |            Create          |   POST   | /orders          | Create new User                          |      TRUE      |
 |            Update          |    PUT   | /orders/:id      | Update a product with ID                 |      TRUE      |
 |            Delete          |  DELETE  | /orders/:id      | Delete a product with ID                 |      TRUE      |
-|:--------------------------:|:--------:|------------------|------------------------------------------|:--------------:|
-```
 
 #### Orders Products
 
-```sh
-|:-----------:|:--------:|:-------------------:|:------------------------------------------:|:--------------:|
+
 | - FUNCTIONS | - Methos |       - Routes      |                - Description               | Token Required |
 |:-----------:|:--------:|:-------------------:|:------------------------------------------:|:--------------:|
 |     Index   |    GET   | /ordersproducts     | Show all orders products                   |      TRUE      |
@@ -69,15 +64,11 @@ For example: `http://localhost:prot:3000`
 |     Create  |   POST   | /ordersproducts     | Create new orders products                 |      TRUE      |
 |     Update  |    PUT   | /ordersproducts/:id | Update a orders productswith order ID      |      TRUE      |
 |     Delete  |  DELETE  | /ordersproducts/:id | Delete a orders products  with order ID    |      TRUE      |
-|:-----------:|:--------:|:-------------------:|:------------------------------------------:|:--------------:|
-```
 
 ## Data Shapes
 
 #### Product
 
-```sh
-|:--------------:|:---------------------:|
 |    - columns   |         - Type        |
 |:--------------:|:---------------------:|
 |        id      |   SERIAL PRIMARY KEY  |
@@ -85,13 +76,9 @@ For example: `http://localhost:prot:3000`
 |      price     |    integer NOT NULL   |
 |   description  |          text         |
 |     category   | VARCHAR(100) NOT NULL |
-|:--------------:|:---------------------:|
-```
 
 #### User
 
-```sh
-|:----------:|:---------------------:|
 |  - columns |         - Type        |
 |:----------:|:---------------------:|
 |     id     |   SERIAL PRIMARY KEY  |
@@ -99,31 +86,21 @@ For example: `http://localhost:prot:3000`
 |  last_name | VARCHAR(100) NOT NULL |
 |    email   | VARCHAR(100) NOT NULL |
 |  password  | VARCHAR(100) NOT NULL |
-|:----------:|:---------------------:|
-```
 
 #### Orders
 
-```sh
-|:----------:|:-------------------------------------:|
 |  - columns |                 - Type                |
 |:----------:|:-------------------------------------:|
 |     id     |           SERIAL PRIMARY KEY          |
 |   status   |          VARCHAR(30) NOT NULL         |
 |   user_id  | integer REFERENCES users(id) NOT NULL |
 | order_time |           TIMESTAMP NOT NULL          |
-|:----------:|:-------------------------------------:|
-```
 
 #### Orders Products
 
-```sh
-|:----------:|:----------------------------------------:|
 |  - columns |                  - Type                  |
 |:----------:|:----------------------------------------:|
 |     id     |            SERIAL PRIMARY KEY            |
 |  order_id  |  integer REFERENCES orders(id) NOT NULL  |
 | product_id | integer REFERENCES products(id) NOT NULL |
 |  quantity  |             integer NOT NULL             |
-|:----------:|:----------------------------------------:|
-```
