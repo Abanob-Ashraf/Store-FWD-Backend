@@ -10,15 +10,11 @@ For example: `http://localhost:prot:3000`
 
 #### Root
 
-
 |     - FUNCTIONS    | - Methos |     - Routes       |         - Description             | Token Required |
 |:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
 |        -----       |    GET   |         /          | Welcome Message for user          |      FALSE     |
 
-
-
 #### Products
-
 
 |     - FUNCTIONS    | - Methos |     - Routes       |         - Description             | Token Required |
 |:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
@@ -29,7 +25,6 @@ For example: `http://localhost:prot:3000`
 |        Delete      |  DELETE  | /products/:id      | Delete a product with ID          |      TRUE      |
 |        popular     |    GET   | /products/popular  | Top 5 most popular products       |      FALSE     |
 |   Show by category |    GET   | /products/category | Search for products with category |      FALSE     |
-
 
 #### Users
 
@@ -55,7 +50,6 @@ For example: `http://localhost:prot:3000`
 |            Delete          |  DELETE  | /orders/:id      | Delete a product with ID                 |      TRUE      |
 
 #### Orders Products
-
 
 | - FUNCTIONS | - Methos |       - Routes      |                - Description               | Token Required |
 |:-----------:|:--------:|:-------------------:|:------------------------------------------:|:--------------:|

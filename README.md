@@ -33,7 +33,6 @@ CREATE DATABASE storefrontbackend_test;
 #### Database Migrations
 
 ```sh
-
 # Migrations used to Create a Tables in Database
 db-migrate up
 
@@ -105,7 +104,6 @@ npm run prettier
 # 3. Testing
 
 npm run test
-
 ```
 
 ### 7. Refrencess
