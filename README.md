@@ -89,15 +89,15 @@ Here, test cases to test the project and also check that the code respects all t
 ```sh
 # 1. Linting
 
-`npm run lint`
+npm run lint
 
 # 2. prettiering
 
-`npm run prettier`
+npm run prettier
 
 # 3. Testing
 
-`npm run test`
+npm run test
 
 ```
 
