@@ -109,5 +109,6 @@ npm run test
 - [NodeJS](https://nodejs.org/en/) - The JavaScript runtime.
 - [Express](https://expressjs.com/) - The web framework.
 - [TypeScript](https://www.typescriptlang.org/) - The language used.
-- [Sharp](https://sharp.pixelplumbing.com/) - NodeJS image processor.
+- [PostgreSql](https://www.postgresql.org/) - The database used
+- [Postman](https://www.postman.com/) - The program used to build, test and iterate my APIs
 ```
