@@ -19,7 +19,6 @@ For example: `http://localhost:prot:3000`
 
 #### Products
 
-```sh
 
 |     - FUNCTIONS    | - Methos |     - Routes       |         - Description             | Token Required |
 |:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
@@ -31,12 +30,9 @@ For example: `http://localhost:prot:3000`
 |        popular     |    GET   | /products/popular  | Top 5 most popular products       |      FALSE     |
 |   Show by category |    GET   | /products/category | Search for products with category |      FALSE     |
 
-```
 
 #### Users
 
-```sh
-|:-----------:|:--------:|------------|------------------------------------------------------------------|:--------------:|
 | - FUNCTIONS | - Methos | - Routes   |                       - Description                              | Token Required |
 |:-----------:|:--------:|------------|------------------------------------------------------------------|:--------------:|
 |     Index   |    GET   | /users     | Show all users                                                   |      TRUE      |
@@ -44,8 +40,6 @@ For example: `http://localhost:prot:3000`
 |     Create  |   POST   | /users     | Create new User                                                  |      FALSE     |
 |     Update  |    PUT   | /users/:id | Update a product with ID                                         |      TRUE      |
 |     Delete  |  DELETE  | /users/:id | Delete a product with ID                                         |      TRUE      |
-|:-----------:|:--------:|------------|------------------------------------------------------------------|:--------------:|
-```
 
 #### Orders
 
