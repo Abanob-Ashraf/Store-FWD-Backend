@@ -20,7 +20,7 @@ For example: `http://localhost:prot:3000`
 #### Products
 
 ```sh
-|:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
+
 |     - FUNCTIONS    | - Methos |     - Routes       |         - Description             | Token Required |
 |:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
 |         Index      |    GET   | /products          | Show all products                 |      FALSE     |
@@ -30,7 +30,7 @@ For example: `http://localhost:prot:3000`
 |        Delete      |  DELETE  | /products/:id      | Delete a product with ID          |      TRUE      |
 |        popular     |    GET   | /products/popular  | Top 5 most popular products       |      FALSE     |
 |   Show by category |    GET   | /products/category | Search for products with category |      FALSE     |
-|:------------------:|:--------:|--------------------|-----------------------------------|:--------------:|
+
 ```
 
 #### Users
