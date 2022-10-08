@@ -6,7 +6,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## API Endpoints
 
-For example: `http://localhost:prot:3000`
+For example: `http://localhost:port:3000`
 
 #### Root
 
