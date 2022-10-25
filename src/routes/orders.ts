@@ -21,6 +21,8 @@ routes.get('/orders/active', authorize, getActiveByUserID)
 
 routes.get('/orders/user/:id', authorize, getOrderByUserID)
 
+// routes.get('/orders/:id/user/:userid', authorize, getOrderByID, getOrderByUserID)
+
 routes.get('/orders/:id', authorize, getOrderByID)
 
 routes.post('/orders', authorize, createOrder)
