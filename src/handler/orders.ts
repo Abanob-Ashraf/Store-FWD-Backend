@@ -71,7 +71,6 @@ export const createOrder = async (req: Request, res: Response) => {
     const newOrder = await store.create(order)
     return res.json(newOrder)
   } catch (error) {
-    console.log(error)
     res.status(400).json(error)
   }
 }
@@ -81,7 +80,6 @@ export const deleteOrder = async (req: Request, res: Response) => {
     const deletedOrder = await store.delete(+req.params.id)
     return res.send(deletedOrder)
   } catch (error) {
-    console.log(error)
     res.status(400).json(error)
   }
 }

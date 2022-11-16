@@ -17,7 +17,6 @@ export const getProduct = async (req: Request, res: Response) => {
     const product = await store.show(+req.params.id)
     return res.send(product)
   } catch (error) {
-    console.log(error)
     res.status(405).json(error)
   }
 }
@@ -27,7 +26,6 @@ export const getProductByCategory = async (req: Request, res: Response) => {
     const product = await store.showByCategory(req.body.category)
     return res.send(product)
   } catch (error) {
-    console.log(error)
     res.status(401).json(error)
   }
 }
@@ -69,7 +67,6 @@ export const updateProduct = async (req: Request, res: Response) => {
     const updatedProduct = await store.update(Product)
     return res.send(updatedProduct)
   } catch (error) {
-    console.log(error)
     res.status(400).json(error)
   }
 }

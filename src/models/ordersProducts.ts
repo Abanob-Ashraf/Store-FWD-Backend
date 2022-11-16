@@ -19,7 +19,6 @@ export class OrdersProductsModel {
       connection.release()
       return ordersProducts
     } catch (error) {
-      console.log(error)
       throw new Error(`Unable to get all the orders products: ${error}`)
     }
   }

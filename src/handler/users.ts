@@ -36,7 +36,6 @@ export const createUser = async (req: Request, res: Response) => {
     const token = jwt.sign(newUser, process.env.TOKEN_SECRET as string)
     res.status(200).json(token)
   } catch (error) {
-    console.log(error)
     res.status(400).json(error)
   }
 }
@@ -46,7 +45,6 @@ export const deleteUser = async (req: Request, res: Response) => {
     const deletedUser = await store.delete(+req.params.id)
     return res.send(deletedUser)
   } catch (error) {
-    console.log(error)
     res.status(401).json(error)
   }
 }

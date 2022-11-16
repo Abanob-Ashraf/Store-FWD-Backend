@@ -8,7 +8,6 @@ export const getAllOrdersProducts = async (_req: Request, res: Response) => {
     const AllOrdersProduct = await store.index()
     return res.send(AllOrdersProduct)
   } catch (error) {
-    console.log(error)
     res.status(401).json(error)
   }
 }
@@ -44,7 +43,6 @@ export const deleteOrderProductByOrderId = async (req: Request, res: Response) =
     const deleteOrderProduct = await store.delete(+req.params.id)
     return res.send(deleteOrderProduct)
   } catch (error) {
-    console.log(error)
     res.status(400).json(error)
   }
 }
