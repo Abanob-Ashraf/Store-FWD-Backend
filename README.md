@@ -52,14 +52,14 @@ db-migrate create add-ordered-products-table --sql-file
 ```sh
 PORT=3000
 ENV=dev
-POSTGRES_HOST=127.0.0.1
+POSTGRES_HOST=******
 POSTGRES_DB=storefrontbackend
 POSTGRES_DB_TEST=storefrontbackend_test
 POSTGRES_USER=abano
 POSTGRES_PASSWORD=1410
-BCRYPT_PASSWORD=your-secret-password
+BCRYPT_PASSWORD=******
 SALT_ROUND=10
-TOKEN_SECRET=your-secret-token
+TOKEN_SECRET=******
 ```
 
 ### 4. Build Project
